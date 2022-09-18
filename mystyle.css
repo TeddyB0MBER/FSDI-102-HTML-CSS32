@@ -1,0 +1,84 @@
+/*global*/
+/* the * represents all elements and will apply to everything in html*/
+/* import sends a copy of the style used from a different css link*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+/* The :root is a customizable shortcut where you can input your own colors and font styles/space*/
+:root{
+    --primary:#ffcc00;
+}
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    font-family: 'Lato', sans-serif;
+    background-color: black;
+    color:white;
+}
+img{
+    max-width: 100%;
+}
+a{
+    text-decoration: none;
+}
+
+/*menu*/
+.menu-navigation{
+    background-color: white;
+    display:flex;
+    justify-content: space-between;
+    height:45px;
+    align-items: center;
+}
+.img-complete {
+    display:none;
+}
+.img-frame{
+    height: 32px;
+    margin-left: 20px;
+}
+.link-search, .link-news, .link-menu{
+    display:none;
+}
+.link-login{
+    color:black;
+    text-transform:uppercase;
+    font-size: 14px;
+    font-weight:bold;
+    letter-spacing: 3px;
+    margin-right: 20px;
+}
+.link-subs{
+    color:white;
+    text-transform: Uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    font-size:13px;
+    letter-spacing: 3px;
+    margin-right: 20px;
+    background-color: black;
+    padding: 12px;
+}
+/* : placed after a class are css animations to include such as hover and transitions*/
+.link-subs:hover{
+    background-color: #ffcc00;
+    color: black;
+}
+.fa-angles-down{
+    color:black;
+    margin-right: 20px;
+}
+header{
+    height:20vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+header h1{
+    text-align: center;
+    font-size:45px;
+    font-weight: 1000;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom:20px;
+}

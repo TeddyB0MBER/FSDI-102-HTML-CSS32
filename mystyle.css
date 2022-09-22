@@ -88,14 +88,16 @@ header h1{
    
 }
 header span{
-    text-decoration-color: #ffcc00;
-    text-decoration-line: underline;
-    text-decoration-thickness: 2px;
+    border-bottom:  2px solid #ffcc00;
+    background-size: 100% 200%;
+    background-image:linear-gradient(to bottom, black 50%, var(--primary) 50%);
+    transition: background-position .3s ease-in-out, color .1s ease-in-out;
+
 }
 header span:hover{
     background-color: #ffcc00;
     color: black;
-    transition: ease-out .5s;
+    background-position: 0 100%;
 }
 header p{
     text-align: center;
@@ -110,4 +112,89 @@ header p{
     width: 32px;
     height: 4px;
     margin-top:5px;
+}
+/*main news text*/
+.main-news{
+    position: relative;
+    margin-bottom:20px;
+}
+.main-news img{
+    transition: transform .2s;
+}
+.main-news img:hover{
+  transform: scale(1.1); 
+  max-zoom: 50%;
+}
+.main-news-text{
+    position: absolute;
+    top:250px;
+    left:20px;
+}
+.main-news-text h3{
+    text-transform:uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.main-news-text h3:hover{
+    text-decoration: underline;
+    
+}
+.main-news-text p{
+    font-size:32px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+.main-news-text h4{
+text-transform: uppercase;
+letter-spacing: 2px;
+font-size :13px;
+}
+/* secondary news section*/
+.secondary-news{
+margin-bottom:20px;
+margin-left:15px;
+margin-right:15px;
+}
+.secondary-news img{
+    min-width: 100%;
+    transition: transform .2s;
+}
+.secondary-news img:hover{
+    transform: scale(1.1);
+    border-bottom: 5px solid #ffcc00;
+}
+.secondary-news-text{
+    background-color: white;
+    color:black;
+    margin-top: -10px;
+    padding:35px;
+}
+.secondary-news-text h3{
+    text-transform:uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+.secondary-news-text h3:hover{
+    text-decoration: underline;
+}
+.secondary-news-text p{
+    font-size:20px;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+.secondary-news-text h4{
+    text-transform: uppercase;
+letter-spacing: 2px;
+font-size :13px;
+font-weight: bolder;
+}
+.secondary-news-text i{
+    margin-right:10px;
 }
